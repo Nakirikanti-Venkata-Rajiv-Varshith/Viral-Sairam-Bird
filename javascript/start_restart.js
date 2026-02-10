@@ -17,6 +17,9 @@ export function startGame(){
     state.gameRunning=true;
     state.audioUnlocked=false;
     state.level_hard=0;
+    state.pipeSpeed = 4; 
+    state.gravity = 0.35,
+    state.gap = 280,
 
     state.gameOverBanner.style.display="none";
     state.liveScoreEl.innerText =
