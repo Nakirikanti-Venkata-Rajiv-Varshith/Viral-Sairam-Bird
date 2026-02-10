@@ -4,13 +4,17 @@
     left: 1%;
     right: 1%;
     width: 95%;
-    height: 10vh;
+
+    min-height: 70px;
+    height: auto;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;        
+    gap: 10px;
 
-    padding: 0 20px;
+    padding: 10px 20px;
     z-index: 2000;
 
     background: rgba(255, 255, 255, 0.15);
@@ -29,11 +33,14 @@
     color: #000;
     font-family: 'Courier New', Courier, monospace, Arial;
     font-weight: bolder;
-    font-size: 40px;
+
+    font-size: clamp(18px, 4vw, 40px);
+
     background: rgba(255, 255, 255, 0.6);
     pointer-events: none;
     border-radius: 6px;
     user-select: none;
+    padding: 4px 10px;
 }
 
 #live-score {
@@ -42,7 +49,9 @@
     color: #000;
     font-family: 'Courier New', Courier, monospace, Arial;
     font-weight: bolder;
-    font-size: 40px;
+
+    font-size: clamp(18px, 4vw, 40px);
+
     background: rgba(255, 255, 255, 0.6);
     padding: 6px 10px;
     border-radius: 6px;
