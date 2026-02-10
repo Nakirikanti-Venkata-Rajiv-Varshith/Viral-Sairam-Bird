@@ -44,7 +44,7 @@ A Flappy Bird–style browser game built with modular JavaScript architecture an
 
 See gameplay preview:
 
-[▶️ Watch Gameplay](screenshots/gameplay.mp4)
+[▶️ Watch Gameplay](screenshots/shortgameplay.mp4)
 
 ---
 
