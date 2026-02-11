@@ -40,11 +40,14 @@ A Flappy Bird–style browser game built with modular JavaScript architecture an
 
 ---
 
-## 🎮 Demo of Game
+## 🎮 Game Demo
 
-Click the link below to play
+Experience the game by clicking the link below:
+👉 [Play the Game](https://nakirikanti-venkata-rajiv-varshith.github.io/Viral-Sairam-Bird/)
 
- [Click here to play game](https://nakirikanti-venkata-rajiv-varshith.github.io/Viral-Sairam-Bird/)
+Recommended for the Best Experience
+- Play on a desktop or laptop for optimal performance
+- Adjust your browser zoom (zoom out) to enjoy the full gameplay view
 
 ---
 
