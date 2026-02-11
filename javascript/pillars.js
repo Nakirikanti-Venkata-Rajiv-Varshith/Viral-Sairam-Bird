@@ -37,6 +37,7 @@ export function createPillars() {
         top,
         bottom,
         x:startX,
-        passed:false
+        passed:false,
+        nearPlayed: false
     });
 }

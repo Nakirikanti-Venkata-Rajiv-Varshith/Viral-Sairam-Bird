@@ -1,6 +1,9 @@
 import { state } from "./state.js";
 import { updateBird } from "./bird.js";
-import { crashSound } from "./audio.js";
+import { crashSound, nearSound } from "./audio.js";
+
+
+
 
 export function gameLoop() {
 
@@ -21,6 +24,29 @@ export function gameLoop() {
 
         const topRect = p.top.getBoundingClientRect();
         const bottomRect = p.bottom.getBoundingClientRect();
+
+
+        const nearDistance = state.gap * 0.23;
+
+        const birdRect = state.birdRectCached || state.bird.getBoundingClientRect();
+
+        const nearTop =
+            Math.abs(birdRect.bottom - topRect.bottom) < nearDistance &&
+            birdRect.right > topRect.left &&
+            birdRect.left < topRect.right;
+
+        const nearBottom =
+            Math.abs(birdRect.top - bottomRect.top) < nearDistance &&
+            birdRect.right > bottomRect.left &&
+            birdRect.left < bottomRect.right;
+
+        if ((nearTop || nearBottom) && !p.nearPlayed) {
+            nearSound.currentTime = 0;
+            nearSound.play().catch(() => { });
+            p.nearPlayed = true;
+        }
+
+
 
         if (
             birdRect.right > topRect.left &&
@@ -73,7 +99,7 @@ export function endGame() {
 
     state.gameRunning = false;
 
-     state.game.classList.add("shake");
+    state.game.classList.add("shake");
     setTimeout(() => {
         state.game.classList.remove("shake");
     }, 200);
