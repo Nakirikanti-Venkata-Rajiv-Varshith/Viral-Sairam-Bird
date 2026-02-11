@@ -18,7 +18,7 @@ export function startGame(){
     state.audioUnlocked=false;
     state.level_hard=0;
     state.pipeSpeed = 4; 
-    state.gravity = 0.4,
+    state.gravity = 0.42,
     state.gap = 280,
 
     state.gameOverBanner.style.display="none";

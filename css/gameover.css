@@ -1,50 +1,45 @@
 #game-over {
+
     position: absolute;
-    font-family: cursive;
     inset: 0;
+
     display: none;
     align-items: center;
     justify-content: center;
+
+    font-family: cursive;
+
     background: rgba(0, 0, 0, 0.6);
+
     z-index: 1000;
+
+    /* ⭐ ensure overlay fills responsive container */
+    width: 100%;
+    height: 100%;
 }
 
 .game-over-box {
-    padding: 40px 60px;
+
+    /* ⭐ responsive padding */
+    padding: clamp(20px, 4vw, 40px) clamp(30px, 6vw, 60px);
+
     border-radius: 14px;
     text-align: center;
 }
 
 .game-over-text {
-    font-size: 100px;
+
+    font-size: clamp(36px, 8vw, 100px);
     font-weight: bold;
     color: black;
 }
 
 #final-score {
+
     margin-top: 14px;
     font-weight: bolder;
-    font-size: 50px;
+
+    font-size: clamp(20px, 4vw, 50px);
+
     color: black;
 }
-
-.new-record {
-    animation: pulse 0.8s ease;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.15); }
-    100% { transform: scale(1); }
-}
-
-.shake {
-  animation: shake 0.5s;
-}
-
-@keyframes shake {
-  0%,100%{ transform: translate(-50%,-50%); }
-  25%{ transform: translate(calc(-50% + 3px), calc(-50% + 2px)); }
-  50%{ transform: translate(calc(-50% - 3px), calc(-50% - 2px)); }
-}
-

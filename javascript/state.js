@@ -10,7 +10,7 @@ export const state = {
 
     birdY: 0,
     velocity: 0,
-    gravity: 0.45,
+    gravity: 0.42,
 
     score: 0,
     highestScore: Number(localStorage.getItem("flappy_highestscore")) || 0,
