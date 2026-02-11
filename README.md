@@ -44,7 +44,7 @@ A Flappy Bird–style browser game built with modular JavaScript architecture an
 
 Click the link below to play
 
- [Play game by clicking it](https://nakirikanti-venkata-rajiv-varshith.github.io/Viral-Sairam-Bird/)
+ [Click here to play game](https://nakirikanti-venkata-rajiv-varshith.github.io/Viral-Sairam-Bird/)
 
 ---
 
